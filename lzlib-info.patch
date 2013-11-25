@@ -1,0 +1,14 @@
+--- lzlib-1.5/doc/lzlib.texinfo.orig	2013-09-15 01:33:43.000000000 +0200
++++ lzlib-1.5/doc/lzlib.texinfo	2013-11-25 19:43:00.401838932 +0100
+@@ -9,9 +9,9 @@
+ @set UPDATED 15 September 2013
+ @set VERSION 1.5
+ 
+-@dircategory Data Compression
++@dircategory Libraries:
+ @direntry
+-* Lzlib: (lzlib).               Compression library for lzip files
++* Lzlib: (lzlib).			Compression library for lzip files
+ @end direntry
+ 
+ 
