@@ -1,12 +1,12 @@
 Summary:	Data compression library providing in-memory LZMA compression and decompression
 Summary(pl.UTF-8):	Biblioteka zapewniająca kompresję i dekompresję LZMA dla danych w pamięci
 Name:		lzlib
-Version:	1.5
+Version:	1.8
 Release:	1
 License:	GPL v3+
 Group:		Libraries
-Source0:	http://download.savannah.gnu.org/releases/lzip/%{name}-%{version}.tar.lz
-# Source0-md5:	6378ea07986891b6fb4d7f55c14de60f
+Source0:	http://download.savannah.gnu.org/releases/lzip/lzlib/%{name}-%{version}.tar.lz
+# Source0-md5:	db1cb5f549ecaefea50bc1baddb6e2ef
 Patch0:		%{name}-info.patch
 URL:		http://savannah.nongnu.org/projects/lzip/
 BuildRequires:	lzip
