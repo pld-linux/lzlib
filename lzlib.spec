@@ -3,6 +3,8 @@ Summary(pl.UTF-8):	Biblioteka zapewniająca kompresję i dekompresję LZMA dla d
 Name:		lzlib
 Version:	1.9
 Release:	1
+# library license is (2-clause) BSD
+# minilzip license is GPL v2, but it's not packaged
 License:	BSD
 Group:		Libraries
 Source0:	http://download.savannah.gnu.org/releases/lzip/lzlib/%{name}-%{version}.tar.lz
