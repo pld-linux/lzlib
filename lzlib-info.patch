@@ -1,8 +1,8 @@
---- lzlib-1.8/doc/lzlib.texi.orig	2016-09-12 21:36:42.215400851 +0200
-+++ lzlib-1.8/doc/lzlib.texi	2016-09-12 21:37:09.878733869 +0200
+--- lzlib-1.12/doc/lzlib.texi.orig	2021-01-02 00:35:39.000000000 +0100
++++ lzlib-1.12/doc/lzlib.texi	2021-05-09 17:05:50.100193800 +0200
 @@ -9,9 +9,9 @@
- @set UPDATED 17 May 2016
- @set VERSION 1.8
+ @set UPDATED 2 January 2021
+ @set VERSION 1.12
  
 -@dircategory Data Compression
 +@dircategory Libraries:

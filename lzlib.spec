@@ -2,7 +2,7 @@ Summary:	Data compression library providing in-memory LZMA compression and decom
 Summary(pl.UTF-8):	Biblioteka zapewniająca kompresję i dekompresję LZMA dla danych w pamięci
 Name:		lzlib
 Version:	1.12
-Release:	1
+Release:	2
 # library license is (2-clause) BSD
 # minilzip license is GPL v2, but it's not packaged
 License:	BSD
