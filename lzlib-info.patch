@@ -1,10 +1,10 @@
---- lzlib-1.12/doc/lzlib.texi.orig	2021-01-02 00:35:39.000000000 +0100
-+++ lzlib-1.12/doc/lzlib.texi	2021-05-09 17:05:50.100193800 +0200
+--- lzlib-1.13/doc/lzlib.texi.orig	2022-06-25 16:02:59.713988388 +0200
++++ lzlib-1.13/doc/lzlib.texi	2022-06-25 16:06:57.256034846 +0200
 @@ -9,9 +9,9 @@
- @set UPDATED 2 January 2021
- @set VERSION 1.12
+ @set UPDATED 23 January 2022
+ @set VERSION 1.13
  
--@dircategory Data Compression
+-@dircategory Compression
 +@dircategory Libraries:
  @direntry
 -* Lzlib: (lzlib).               Compression library for the lzip format
