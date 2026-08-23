@@ -2,7 +2,7 @@ Summary:	Data compression library providing in-memory LZMA compression and decom
 Summary(pl.UTF-8):	Biblioteka zapewniająca kompresję i dekompresję LZMA dla danych w pamięci
 Name:		lzlib
 Version:	1.16
-Release:	1
+Release:	2
 # library license is (2-clause) BSD
 # minilzip license is GPL v2, but it's not packaged
 License:	BSD
@@ -71,9 +71,15 @@ Statyczna biblioteka lzlib.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/%{_lib}
 
+# install-info would drop its own %{_infodir}/dir here; PLD builds it with fix-info-dir
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	CAN_RUN_INSTALLINFO=false
+
+%{__mv} $RPM_BUILD_ROOT%{_libdir}/liblz.so.* $RPM_BUILD_ROOT/%{_lib}
+ln -sf /%{_lib}/$(basename $RPM_BUILD_ROOT/%{_lib}/liblz.so.*.*) $RPM_BUILD_ROOT%{_libdir}/liblz.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -90,8 +96,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog NEWS README
-%attr(755,root,root) %{_libdir}/liblz.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/liblz.so.1
+%attr(755,root,root) /%{_lib}/liblz.so.*.*
+%attr(755,root,root) %ghost /%{_lib}/liblz.so.1
 
 %files devel
 %defattr(644,root,root,755)
